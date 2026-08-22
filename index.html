@@ -1,4 +1,7 @@
 <title>マインドフルネスコーチング 咲空麻美 | 個別セッション・講座・リトリート</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #ede8db;
@@ -72,14 +75,21 @@
   }
 
   .serif {
-    font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho",
+    font-family: "Kiwi Maru", "Hiragino Mincho ProN", "Yu Mincho",
       "Noto Serif JP", serif;
+    font-weight: 500;
+  }
+
+  .gentle {
+    font-family: "Kiwi Maru", "Hiragino Mincho ProN", "Yu Mincho",
+      "Noto Serif JP", serif;
+    font-weight: 500;
   }
 
   h1, h2, h3 {
-    font-family: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho",
+    font-family: "Kiwi Maru", "Hiragino Mincho ProN", "Yu Mincho",
       "Noto Serif JP", serif;
-    font-weight: 600;
+    font-weight: 500;
     text-wrap: balance;
     color: var(--ink);
     margin: 0;
@@ -274,6 +284,7 @@
   }
 
   .story-media {
+    display: block;
     width: 100%;
     height: 100%;
     min-height: 14rem;
@@ -734,8 +745,8 @@
   <div class="wrap hero-inner">
     <p class="eyebrow">MINDFULNESS COACHING</p>
     <h1>
-      <span data-lang-ja>「揺れる私」のまま、<br>今ここに戻る。</span>
-      <span data-lang-en>Come back to now,<br>swaying and all.</span>
+      <span data-lang-ja><span class="gentle">「揺れる私」</span>のまま、<br>今ここに戻る。</span>
+      <span data-lang-en>Come back to now,<br><span class="gentle">swaying and all.</span></span>
     </h1>
     <p class="lead">
       <span data-lang-ja>
@@ -829,13 +840,37 @@
   <section id="story">
     <div class="wrap">
       <div class="story-layout reveal">
-        <img
+        <svg
           class="story-media"
-          src="images/story-illustration.png"
-          alt=""
-          loading="lazy"
-          onerror="this.style.display='none'"
+          viewBox="0 0 400 520"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          aria-label=""
         >
+          <rect width="400" height="520" fill="var(--paper)" />
+          <defs>
+            <radialGradient id="storyGlow" cx="50%" cy="42%" r="55%">
+              <stop offset="0%" stop-color="var(--moss)" stop-opacity="0.35" />
+              <stop offset="55%" stop-color="var(--indigo)" stop-opacity="0.16" />
+              <stop offset="100%" stop-color="var(--indigo)" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="220" r="190" fill="url(#storyGlow)" />
+          <circle cx="200" cy="300" r="118" fill="none" stroke="var(--paper-line)" stroke-width="1" />
+          <circle cx="200" cy="300" r="150" fill="none" stroke="var(--paper-line)" stroke-width="1" />
+          <path
+            d="M200 236 C155 236, 128 274, 128 328 C128 380, 152 420, 200 428 C248 420, 272 380, 272 328 C272 274, 245 236, 200 236 Z"
+            fill="var(--moss-deep)"
+            opacity="0.82"
+          />
+          <circle cx="200" cy="204" r="30" fill="var(--moss-deep)" opacity="0.82" />
+          <g opacity="0.55">
+            <path d="M74 468 C82 440 78 412 66 392" fill="none" stroke="var(--moss)" stroke-width="3" stroke-linecap="round" />
+            <ellipse cx="60" cy="388" rx="14" ry="7" fill="var(--moss)" transform="rotate(-30 60 388)" />
+            <ellipse cx="78" cy="404" rx="12" ry="6" fill="var(--moss)" transform="rotate(20 78 404)" />
+            <ellipse cx="68" cy="424" rx="13" ry="6.5" fill="var(--moss)" transform="rotate(-10 68 424)" />
+          </g>
+        </svg>
         <div class="story">
         <p class="eyebrow">MY STORY</p>
         <h2 class="serif">
@@ -1416,7 +1451,7 @@
         <span data-lang-ja>一人で抱え込まなくて大丈夫です。まずは20分、呼吸を一緒に整えるところから。</span>
         <span data-lang-en>You don't have to carry it alone. Let's start with 20 minutes of steadying our breathing together.</span>
       </p>
-      <a class="cta" href="https://calendar.app.google/HqUHEqVsWR2TyiKg7">
+      <a class="cta" href="https://calendar.app.google/45dqqRKtXzcWbU4k7">
         <span data-lang-ja>無料体験セッションを予約する</span>
         <span data-lang-en>Book a free trial session</span>
         <span class="arrow">→</span>
