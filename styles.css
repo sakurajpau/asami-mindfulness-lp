@@ -4,8 +4,8 @@
   --paper-line: rgba(43, 42, 34, 0.12);
   --ink: #2b2a22;
   --ink-soft: #5a5646;
-  --moss: #55643f;
-  --moss-deep: #3c4a2c;
+  --moss: #47692e;
+  --moss-deep: #2c451a;
   --indigo: #34495a;
   --indigo-soft: #5c7686;
   --clay: #a6876c;
@@ -19,8 +19,8 @@
     --paper-line: rgba(233, 228, 212, 0.14);
     --ink: #ece7d6;
     --ink-soft: #c3bda6;
-    --moss: #9bb17d;
-    --moss-deep: #c3d6a4;
+    --moss: #8ac162;
+    --moss-deep: #b6dd8e;
     --indigo: #8fb0c2;
     --indigo-soft: #6f93a5;
     --clay: #c9a685;
@@ -34,8 +34,8 @@
   --paper-line: rgba(233, 228, 212, 0.14);
   --ink: #ece7d6;
   --ink-soft: #c3bda6;
-  --moss: #9bb17d;
-  --moss-deep: #c3d6a4;
+  --moss: #8ac162;
+  --moss-deep: #b6dd8e;
   --indigo: #8fb0c2;
   --indigo-soft: #6f93a5;
   --clay: #c9a685;
@@ -48,8 +48,8 @@
   --paper-line: rgba(43, 42, 34, 0.12);
   --ink: #2b2a22;
   --ink-soft: #5a5646;
-  --moss: #55643f;
-  --moss-deep: #3c4a2c;
+  --moss: #47692e;
+  --moss-deep: #2c451a;
   --indigo: #34495a;
   --indigo-soft: #5c7686;
   --clay: #a6876c;
@@ -922,6 +922,39 @@ html[data-lang="en"] [data-lang-en].block { display: block; }
 .lang-btn:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
+}
+
+/* philosophy: inverted statement section for visual weight */
+
+#philosophy {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+#philosophy .eyebrow,
+#philosophy .kanji {
+  color: var(--moss-deep);
+}
+
+#philosophy .eyebrow::before {
+  background: var(--moss-deep);
+}
+
+#philosophy .section-head .mark {
+  background: color-mix(in srgb, var(--bg) 25%, transparent);
+}
+
+#philosophy h2,
+#philosophy h3 {
+  color: var(--bg);
+}
+
+#philosophy .step p {
+  color: color-mix(in srgb, var(--bg) 72%, transparent);
+}
+
+#philosophy .ghost-label {
+  color: color-mix(in srgb, var(--bg) 8%, transparent);
 }
 
 /* ghost background labels */
